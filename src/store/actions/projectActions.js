@@ -5,9 +5,9 @@ export const createProject = (project) => {
 
         firestore.collection('projects').add({
             ...project, 
-            authorFirstName: 'Net',
-            authorLastName: 'Ninja',
-            authorId: 1234,
+            authorFirstName: 'Rebecca',
+            authorLastName: 'Souza',
+            authorId: 10001,
             createdAt: new Date()
         }).then(() => {
             dispatch({ type: 'CREATE_PROJECT', project })
@@ -20,7 +20,7 @@ export const createProject = (project) => {
 
 /*
 
-ACCESS PROJECT INSIDE FIREBASE DATA
+CREATE PROJECT INSIDE FIREBASE DATA
 firestore.collection('project')
 
 AÇÃO PARA ADICIONAR UM NOVO PROJETO AO BANCO

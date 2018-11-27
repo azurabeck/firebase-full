@@ -11,6 +11,7 @@ class Dashboard extends Component {
 
         const { projects } = this.props
 
+    
         //console.log(this.props)
         return(
             <div className='dashboad container'>
